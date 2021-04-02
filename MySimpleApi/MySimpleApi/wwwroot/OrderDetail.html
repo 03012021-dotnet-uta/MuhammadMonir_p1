@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cartstyle.css">
+    <style>
+        .myorders-container {
+            max-width: 650px;
+            justify-content: space-around;
+            margin: 0 auto;
+            margin-top: 50px;
+            font-size: 25px;
+            color: blue;
+            margin-left: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .myorders-header {
+            width: 100%;
+            max-width: 650px;
+            display: flex;
+            color: blue;
+            font-weight: bold;
+            justify-content: flex-start;
+            border-bottom: 4px solid lightgrey;
+            margin: 0 auto;
+        }
+
+        .myorders-body {
+            width: 100%;
+            max-width: 650px;
+            display: flex;
+            justify-content: flex-start;
+            border-bottom: 1px solid lightgrey;
+            margin: 0 auto;
+        }
+
+        .myorders-id {
+            width: 15%;
+        }
+
+        .myorders-store {
+            width: 25%;
+            display: flex;
+            align-items: center;
+        }
+
+        .myorders-date {
+            width: 30%;
+            display: flex;
+            align-items: center;
+        }
+
+        .myorders-total {
+            width: 15%;
+            display: flex;
+            align-items: center;
+        }
+
+        .myorders-status {
+            width: 15%;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    <title>My Orders</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>My Stores</h2>
+            <ul>
+                <li><a href="shop.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="myorders.html">My Orders</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="userelement"></div>
+    </header>
+    <br />
+    <br />
+    <div class="myorders-header">
+        <span class="myorders-id">Order ID</span>
+        <span class="myorders-store">Store</span>
+        <span class="myorders-date">Date</span>
+        <span class="myorders-total">Total</span>
+        <span class="myorders-status">Status</span>
+    </div>
+    <div class="myorders">
+
+    </div>
+    <br>
+    <br>
+    <div class="orderdetails">
+
+    </div>
+    <script src="js/orderdetails.js"></script>
+    <script src="js/security.js"></script>
+</body>
+</html>

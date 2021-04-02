@@ -1,0 +1,50 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="./css/MyStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div id ="div1" class="login-reg-panel">
+        <div class="login-info-box" style="display: none;">
+            <h2>Have an account?</h2>
+            <p>A Project by Revature Bootcamp.....</p>
+            <label id="label-register" for="log-reg-show">Login</label>
+            <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
+        </div>
+
+        <div class="register-info-box" style="">
+            <h2>Don't have an account?</h2>
+            <p>A Project by Revature Bootcamp.....</p>
+            <label id="label-login" for="log-login-show">Register</label>
+            <input type="radio" name="active-log-panel" id="log-login-show">
+        </div>
+        <div class=" responseDiv"></div>
+
+        <div class="white-panel">
+            <form class="loginForm" onsubmit="return validateForm()">
+                <div class="login-show show-log-panel">
+                    <h2>LOGIN</h2>
+                    <input type="email" placeholder="Email" name="email" id="emailid">
+                    <input type="password" placeholder="Password" name="password" id="password">
+                    <input type="button" value="Login" onclick="login()">
+                    <div class="errorshow"></div>
+                    <a href="">Forgot password?</a>
+                </div>
+            </form>
+            <form class="regForm">
+                <div class="register-show">
+                    <h2>REGISTER</h2>
+                    <input type="text" placeholder="FName" name="fname" id="fnameid1">
+                    <input type="text" placeholder="Lmail" name="lname" id="lnameid1">
+                    <input type="email" placeholder="Email" name="email1" id="emailid1">
+                    <input type="password" placeholder="Password" name="password1" id="password1">
+                    <input type="password" placeholder="Confirm Password" name="password2" id="password2">
+                    <input type="button" value="Register" onclick="register()">
+                    <div class="errorshow"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/fetch.js"></script>
+</body>
+</html>

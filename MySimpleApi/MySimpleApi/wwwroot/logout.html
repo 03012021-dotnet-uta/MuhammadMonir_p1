@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cartstyle.css">
+    <title>Logout</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>My Stores</h2>
+            <ul>
+                <li><a href="shop.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="myorders.html">My Orders</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+<script>
+    let userinput = confirm("Logout will delete all carts and other data! Are you sure you want to logout");
+    if (userinput == true)
+    {
+        sessionStorage.removeItem('user');
+        sessionStorage.removeItem('cartNumbers');
+        sessionStorage.removeItem('productsInCart');
+        sessionStorage.removeItem('totalCost');
+        sessionStorage.removeItem('stores');
+        sessionStorage.removeItem('products');
+        sessionStorage.removeItem('storeid');
+        location.replace("./index.html");
+    }
+    
+</script>
+</body>
+</html>
