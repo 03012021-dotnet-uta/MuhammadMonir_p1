@@ -65,7 +65,7 @@ This a basic application which has seperate backend API and seperate frontend. U
 
 ## location
 
-- ✔ has an inventory
+- has an inventory
 - inventory decreases when orders are accepted
 - rejects orders that cannot be fulfilled with remaining inventory
 - (optional: for a product, more than one inventory item decrements when ordering that product)
@@ -79,12 +79,6 @@ This a basic application which has seperate backend API and seperate frontend. U
 - price
 - quantity available
 - name
-
-## (optional) offer
-
-- has multiple products
-- description
-- price
 - inventory quantity <-- must not be greater than each of the products
 
 ## user interface
